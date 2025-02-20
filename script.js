@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typeof lucide !== "undefined") {
     lucide.createIcons()
   } else {
-    console.warn("Lucide icons not initialized. Ensure Lucide is properly imported or included.")
+    console.warn("Lucide icons not found. Make sure to include the Lucide library.")
   }
 
   // Set current year in footer
