@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Digital Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-background/80 backdrop-blur-sm border-b">
+            <div class="max-w-7xl mx-auto px-[5%] h-16 flex items-center justify-between">
+                <a href="index.html#work" class="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Back to Projects
+                </a>
+                <div class="w-8 h-8 relative">
+                    <img src="/logo.svg" alt="Logo" class="object-contain w-full h-full">
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow max-w-7xl mx-auto px-[5%] py-12">
+            <section class="mb-12">
+                <div class="relative aspect-video mb-6 rounded-lg overflow-hidden">
+                    <img src="/placeholder.svg?height=600&width=1200" alt="Project Image" class="object-cover w-full h-full" id="project-image">
+                </div>
+                <h1 class="text-4xl font-bold mb-4" id="project-title"></h1>
+                <div class="flex flex-wrap gap-4 text-muted-foreground mb-6">
+                    <p id="project-client"></p>
+                    <p id="project-duration"></p>
+                    <p id="project-year"></p>
+                </div>
+                <p class="text-lg max-w-3xl" id="project-overview"></p>
+            </section>
+
+            <section class="mb-12 grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">The Challenge</h2>
+                    <p id="project-challenge"></p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">The Solution</h2>
+                    <p id="project-solution"></p>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-6">The Process</h2>
+                <div class="space-y-12" id="project-process">
+                    <!-- Process steps will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4">The Outcome</h2>
+                <p class="text-lg max-w-3xl" id="project-outcome"></p>
+            </section>
+
+            <section class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Interested in working together?</h2>
+                <div class="flex justify-center gap-4">
+                    <a href="index.html#work" class="button">View More Projects</a>
+                    <a href="index.html#contact" class="button button-outline">Get in Touch</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t mt-16">
+            <div class="max-w-7xl mx-auto px-[5%] py-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex gap-6 mb-4 md:mb-0">
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i data-lucide="youtube" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <p class="text-sm text-muted-foreground">© <span id="current-year"></span> Your Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
